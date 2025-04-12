@@ -85,3 +85,4 @@ func assertDefinition(t testing.TB, d Dictionary, word, definition string) {
 		t.Errorf("got %q want %q", got, definition)
 	}
 }
+
