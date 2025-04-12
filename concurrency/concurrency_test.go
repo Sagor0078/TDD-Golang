@@ -16,6 +16,8 @@ func TestSquareWorker(t *testing.T) {
 
 	actual := SquareWorker(input)
 
+
+    // Since goroutines may return in any order, we sort before comparison
 	sort.Ints(actual)
 
 	if !reflect.DeepEqual(actual, expected) {
